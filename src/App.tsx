@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { /* BrowserRouter, */ Routes, Route, Link, HashRouter } from 'react-router-dom'
 
 // local imports
 import logo from './logo.svg'
@@ -21,13 +21,15 @@ function App() {
   )
   return (
     <div className={styles.App}>
-      <BrowserRouter>
+      <HashRouter>
+        {/* <BrowserRouter> */}
         <Routes>
           <Route path="/" element={templateHome} />
           <Route path="/testPage" element={<TestPage />} />
           <Route path="*" element={<h1>404 NOT FOUND</h1>} />
         </Routes>
-      </BrowserRouter>
+        {/* </BrowserRouter> */}
+      </HashRouter>
     </div>
   )
 }
