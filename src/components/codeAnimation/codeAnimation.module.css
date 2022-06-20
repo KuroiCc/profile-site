@@ -1,0 +1,73 @@
+/* cli-container */
+.cli-container {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+
+  overflow: auto;
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+  padding: 4px 6px;
+  background-color: #000000;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.cli-container > pre,
+.cli-container > pre > a,
+.cli-container > pre > span,
+.cli-container > pre > em {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: normal;
+}
+
+.cli-container > pre {
+  margin-bottom: 1em;
+  white-space: pre-line;
+  word-break: break-all;
+}
+
+.cli-container > pre > span {
+  color: lightgreen;
+}
+
+.cli-container > pre > a {
+  color: lightblue;
+}
+
+.cli-container > pre > em {
+  color: red;
+}
+
+/* typing-animation-container */
+.typing-animation-container .typing-animation {
+  display: inline-block;
+  width: 26ch;
+  overflow: hidden;
+  vertical-align: top;
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+  animation: typing 3s steps(26) infinite, caret 0.5s steps(1) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-right-color: currentColor;
+  }
+}

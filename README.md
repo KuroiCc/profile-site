@@ -1,3 +1,6 @@
+./build/index.htmlを直接開いてもみることができます。
+以下の方法もできます。
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
