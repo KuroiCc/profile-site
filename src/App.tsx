@@ -1,9 +1,10 @@
 import React from 'react'
-import { /* BrowserRouter, */ HashRouter, Routes, Route } from 'react-router-dom'
+import { /* BrowserRouter, */ HashRouter, Routes, Route, Link } from 'react-router-dom'
 
 // local imports
 import './App.css'
 import logo from './logo.svg'
+import { TestPage } from './pages'
 
 function App() {
   const templateHome = (
@@ -11,16 +12,12 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Here is the home page <br />
+          Click following link to other page
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Link className="App-link" to="/testPage">
+          Test Page
+        </Link>
       </header>
     </div>
   )
@@ -30,6 +27,8 @@ function App() {
       <HashRouter>
         <Routes>
           <Route path="/" element={templateHome} />
+          <Route path="/testPage" element={<TestPage />} />
+          <Route path="*" element={<h1>404 NOT FOUND</h1>} />
         </Routes>
       </HashRouter>
       {/* </BrowserRouter> */}
