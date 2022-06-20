@@ -1,9 +1,12 @@
 import React from 'react'
-import logo from './logo.svg'
+import { /* BrowserRouter, */ HashRouter, Routes, Route } from 'react-router-dom'
+
+// local imports
 import './App.css'
+import logo from './logo.svg'
 
 function App() {
-  return (
+  const templateHome = (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -20,6 +23,17 @@ function App() {
         </a>
       </header>
     </div>
+  )
+  return (
+    <>
+      {/* <BrowserRouter> */}
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={templateHome} />
+        </Routes>
+      </HashRouter>
+      {/* </BrowserRouter> */}
+    </>
   )
 }
 
