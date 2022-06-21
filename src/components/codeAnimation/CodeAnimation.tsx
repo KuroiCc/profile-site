@@ -1,4 +1,3 @@
-/* eslint-disable no-irregular-whitespace */
 import React from 'react'
 
 import './CodeAnimation.css'
@@ -52,9 +51,9 @@ export const CodeAnimation: React.FC = () => {
                 <br />
                 <br />
                 <div className="pl-8">
-                  #1) Respect the privacv of others. <br />
+                  #1) Respect the privacy of others. <br />
                   #2) Think before you type. <br />
-                  #3) With areat power comes areat responsibilitv. <br />
+                  #3) With great power comes great responsibility. <br />
                 </div>
                 <br />
                 <span className="caretStyle caretPassword">Password: </span>
@@ -64,7 +63,7 @@ export const CodeAnimation: React.FC = () => {
         </code>
         <div>
           <div className="appearWelcome">
-            <div className="-mb-16 -mt-20 -ml-4 text-xs whitespace-pre origin-left scale-50 sm:scale-75 sm:-my-2 sm:-mt-8 h-96 sm:ml-0">
+            <div className="-mt-20 -mb-16 -ml-4 text-xs whitespace-pre origin-left scale-50 sm:scale-75 sm:-my-2 sm:-mt-8 h-96 sm:ml-0">
               <div className="ml-32">{welcomeTo}</div>
               <div className="ml-14">{kuroiCCs}</div>
               <div>{profileSite}</div>
