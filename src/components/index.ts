@@ -1,1 +1,1 @@
-export * from './codeAnimation'
+export * from './CodeAnimation'
