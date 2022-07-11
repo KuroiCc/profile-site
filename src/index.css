@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 @import url('http://fonts.cdnfonts.com/css/cascadia-code');
+
+html {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+}
