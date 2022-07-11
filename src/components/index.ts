@@ -1,1 +1,5 @@
 export * from './CodeAnimation'
+export * from './Profile'
+export * from './DividingLine'
+export * from './ProfileDetail'
+export * from './Works'
