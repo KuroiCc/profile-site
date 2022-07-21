@@ -32,7 +32,9 @@
         "no-extra-semi": "error",
         "no-unexpected-multiline": "error",
         "no-unreachable": "error",
-        
+
+        "multiline-ternary": ["error", "never"],
+
         // disallows a space before function parenthesis
         "space-before-function-paren": ["error", {
             "anonymous": "never",
