@@ -9,7 +9,7 @@ import { Home, TestPage } from './pages'
 function App() {
   const Layout = (
     <main>
-      <div className="m-auto max-w-screen-2xl">
+      <div className="m-auto max-w-screen-2xl overflow-clip">
         <Outlet />
       </div>
     </main>
@@ -22,10 +22,6 @@ function App() {
           <Route path="/" element={Layout}>
             <Route index element={<Home />} />
             <Route path="/testPage" element={<TestPage />} />
-            <Route
-              path="*"
-              element={<h1 className="m-auto text-zinc-100 text-8xl mt-14">404 NOT FOUND</h1>}
-            />
           </Route>
         </Routes>
         {/* </HashRouter> */}
