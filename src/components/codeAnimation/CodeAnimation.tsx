@@ -32,8 +32,14 @@ export const CodeAnimation: React.FC = () => {
   $$/      $$/        $$$$$$/  $$/       $$/ $$/  $$$$$$$/        $$$$$$/  $$/    $$$$/   $$$$$$$/ 
 `
   return (
-    <section className="text-xs shadow-inner shadow-[rgba(225,29,72,0.1)] sm:shadow-2xl sm:shadow-[rgba(225,29,72,0.3)] sm:rounded-xl sm:text-base text-zinc-100 bg-zinc-800 font-code">
-      <div className="hidden w-full bg-black sm:block h-7 rounded-t-xl"></div>
+    <section className="text-xs min-h-[calc(100vh-36px)] md:min-h-full shadow-inner shadow-[rgba(225,29,72,0.1)] md:shadow-2xl md:shadow-[rgba(225,29,72,0.3)] md:rounded-xl md:text-base text-zinc-100 bg-zinc-900 font-code">
+      <div className="hidden w-full bg-zinc-800 md:block h-7 rounded-t-xl">
+        <div className="hidden h-full ml-5 space-x-2 md:flex md:items-center">
+          <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+          <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
+          <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+        </div>
+      </div>
       <div className="p-5">
         <code>
           Last login: Mon May 16 08:41:10
