@@ -12,24 +12,24 @@ export const Profile: React.FC = () => {
       <div className="px-12 font-mono text-zinc-100">
         <h1 className="text-5xl">Chen Cheng</h1>
         <p className="flex mt-4 text-xl">
-          <span className="flex items-baseline">
-            <img className="w-5 h-5 mr-1" src={AGUIcon} alt="AGUIcon" /> AGU,
+          <span className="flex items-end flex-shrink-0">
+            <img className="w-5 h-5 mr-1 mb-1.5" src={AGUIcon} alt="AGUIcon" /> AGU,&nbsp;
           </span>
-          <span className="flex items-baseline ml-1">
-            <img className="w-5 h-5 mr-1" src={SSIIcon} alt="AGUIcon" /> SSI,
+          <span className="flex items-end flex-shrink-0 mr-0.5">
+            <img className="w-5 h-5 mb-1 mr-1.5" src={SSIIcon} alt="AGUIcon" /> SSI,&nbsp;
           </span>
-          <span className="flex items-baseline ml-2">
-            <img className="w-5 h-5 mr-1" src={MyjLabIcon} alt="AGUIcon" /> MYJ Lab.
+          <span className="flex items-end flex-shrink-0">
+            <img className="w-5 h-5 mb-1 mr-1.5" src={MyjLabIcon} alt="AGUIcon" /> MYJ Lab.
           </span>
         </p>
-        <p className="mt-1 text-2xl">Developer On the road of endless journeys...</p>
+        <p className="mt-8 text-2xl">Developer on the road of endless journeys...</p>
         {/* social */}
-        <p className="flex flex-wrap mt-2">
+        <p className="flex flex-wrap mt-8">
           <a
             target="_blank"
             rel="noopener noreferrer external"
             href="https://github.com/KuroiCc"
-            className="flex items-center mt-2 mr-2 hover:underline"
+            className="flex items-center mt-2 mr-4 hover:underline"
           >
             <GitHubIcon className="w-5 h-5 mr-1.5 fill-zinc-100" />
             KuroiCc
@@ -64,15 +64,6 @@ export const Profile: React.FC = () => {
               alt="qiita icon"
             />
             @Kuroi_Cc
-          </a>
-        </p>
-        <p className="mt-4">
-          <a className="hover:underline" href="mailto:chenchengmikuro@gmail.com">
-            chenchengmikuro@gmail.com
-          </a>
-          <br />
-          <a className="hover:underline" href="mailto:chenchengmikuro@gmail.com">
-            a8119124@aoyama.jp <span className="text-sm">(Valid until 2023/03)</span>
           </a>
         </p>
       </div>
